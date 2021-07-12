@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SLA</title>
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="{%static 'css/index.css' %}"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+      body{
+        background-image: url(static/images/start.jpg);
+
+      }
+      .main-content{
+      color:red;
+      font-family: Segoe UI;
+      text-align: center;
+      }
+
+      .heading{
+        margin-top: 10%;
+        font-size: 100px;
+      }
+      .btn{
+        margin-top: 2%;
+      }
+      .btn1{
+        background: #F00000   : 
+      }
+
+
+    #section2{
+      font-family: Open Sans;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: #303030;
+      background-size: cover;
+    }
+          .mainbox{
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+    .mainbox:after{
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 32px;
+      /*background: url("static/images/Left_arrow.png") no-repeat;*/
+      background-size: 32px;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .box{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 10px solid #D4AF37 ;
+      overflow: hidden;
+      transition: all ease 5s;
+    }
+    span{
+      width: 50%;
+      height: 50%;
+      display: inline-block;
+      position: absolute;
+    }
+    .span1{
+      clip-path: polygon(0 92%, 100% 50%, 0 8%);
+      background-color: #ffeb3b;
+      top: 120px;
+      left: 0;
+    }
+    .span2{
+      clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+      background-color: #e91e63;
+      top: 120px;
+      right: 0;
+    }
+    .span3{
+      clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+      background-color: #4caf50;
+      bottom: 0;
+      left: 120px;
+    }
+    .span4{
+      clip-path: polygon(50% 100%, 92% 0, 8% 0);
+      background-color: #3f51b5;
+      top: 0;
+      left: 120px;
+    }
+    .box2{
+      width: 100%;
+      height: 100%;
+      transform: rotate(-135deg);
+    }
+    span b{
+      /*width: 65px;
+      height: 65px;*/
+      line-height: 65px;
+      /*border-radius: 50%;*/
+      font-size: 26px;
+      text-align: left;
+      /*background-color: #fff;*/
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /*box-shadow: inset 0 3px 3px 0 #717171;*/
+    }
+    .spin{
+      position : absolute;
+      top : 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75px;
+      height: 75px;
+      border-radius: 50%; 
+      border: 4px solid #fff;
+      background-color: #ff5722;
+      color: #fff;
+      box-shadow: 0 5px 20px #000;
+      font-weight: bold;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .spin:active{
+      width : 70px;
+      height: 70px;
+      font-size: 20px; 
+    }
+
+    .mainbox.animate:after{
+      animation: animateArrow 0.7s ease infinite;
+    }
+    /*@keyframes animateArrow{
+
+    }*/
+
+    </style>
+</head>
+<body>
+<section id="section1">
+      <div class="main-content ">
+        <h1 class="heading">PSL GAME <br>ZONE</h1>
+        <br><h1>BY</h1><br>
+        <h1 style="color: whitesmoke">Navratnas</h1>
+      </h1>
+        <button class="btn  btn-md btn1">
+        <h4>Explore
+      <i class="fas fa-angle-double-right"></i>
+        </h4>
+      </button>
+</div>
+
+</section>
+<section id="section2">
+
+  <!--<h1>Glossary : </h1> <br><br>
+  <h2> CW : Crossword </h2> <br>
+  <h2> HM : Hangman </h2> <br>
+  <h2> QZ : Quiz </h2> <br>
+  <h2> JS : Jigsaw </h2> <br>
+  <h2> WS : Word Search </h2> <br> --> 
+<!-- 
+  <button class="btn btn-danger btn-md btn2">
+    <h4>Home
+  <i class="fas fa-angle-double-right"></i>
+    </h4>
+  </button> -->
+
+  <div id = "mainbox" class = "mainbox">
+    <div id = "box" class = "box">
+      <div class = "box1">
+        <span class = "span1"><b> Crossword </b> </span>
+        <span class = "span2"><b> WordSearch</b> </span>
+        <span class = "span3"><b> Quiz</b> </span>
+        <span class = "span4"><b> JigSaw</b> </span>
+      </div>
+      <div class = "box2">
+        <span class = "span1"><b> Hangman </b> </span>
+        <span class = "span2"><b> Hangman </b> </span>
+        <span class = "span3"><b> Quiz </b> </span>
+        <span class = "span4"><b> Jigsaw </b> </span>
+      </div>
+    </div>
+    <button class = "spin" onclick = "SpinFunction()"> Spin </button>
+  </div>
+
+  
+
+
+</section>
+
+
+
+</body>
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<script src="static/bootstrap/js/bootstrap.bundle.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(event){
+      event.preventDefault();
+    $(".main-content").slideUp();
+    
+    $('#section2').show();
+
+    });
+
+  $(".btn2").click(function(event){
+      event.preventDefault();
+    $(".main-content").slideDown();
+    
+    $('#section2').hide();
+
+    });
+
+});
+</script>
+
+<script>
+    $('#section2').hide();
+    function SpinFunction(){
+      var x = 1024; // Min Value
+      var y = 9999; // Max Value
+
+      var deg = Math.floor(Math.random() * (x-y)) + y;
+      document.getElementById('box').style.transform="rotate("+deg+"deg)";
+
+      var element = document.getElementById('mainbox');
+      element.classList.remove('animate');
+      setTimeout(function(){
+        element.classList.add('animate');
+      }, 5000);  // 5000 = 5 seconds
+
+      $("#box").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+          var game=Math.floor(Math.random() * 6)+1;
+    
+
+        switch(game)
+        {
+          case 1: document.location.href="templates/wordsearch.html";
+                  break;
+
+          case 2: document.location.href="templates/crossword.html";
+                  break;
+
+          case 3: document.location.href="templates/quiz.html";
+                  break;
+
+          case 4: document.location.href="templates/jigsaw.html";
+                  break;
+
+          case 5: document.location.href="templates/hangman.html";
+                  break;
+        } 
+      });
+
+    }
+  </script>
+</html>

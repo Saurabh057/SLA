@@ -1,0 +1,21 @@
+body{
+    /*background-color: #181818;*/
+    background-image: url('../images/quizbg.jpg');
+}
+
+.questionbox{
+    border: 1px solid red;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 50px;
+    color: whitesmoke;
+}
+
+.question{
+	background-color: #00ffff		;
+	color: black;
+	height: 30%;
+	font-size: x-large;	
+}
