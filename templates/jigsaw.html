@@ -51,7 +51,7 @@
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
-	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
 
 </head>
@@ -73,9 +73,8 @@
 		</ol>
 		<div class="terms">
 		<div align="center">
-		<a href="https://www.bookwidgets.com/play/0ZyG5r1n-iQAEDtTVfAAAA/WCL9BWM/jigsaw-puzzle-4?teacher_id=6610602167369728">
 			<button type="submit" class="btn btn-danger btn-lg " id="start" style="box-shadow: 0 0 25px rgba(255,100,100,1); margin-left: 110%;" form="form1">PLAY NOW</button>
-		</a>
+		
 		</div>
 		</div>
 	</div>
@@ -100,6 +99,28 @@
 		function getRandomInt() {
 			  return Math.floor(Math.random() * Math.floor(255));
 		}
+		
+		$( "#start" ).click(function() {
+			var game=Math.floor(Math.random() * 4)+1;
+    
+
+	        switch(game)
+	        {
+	          case 1: document.location.href="https://www.bookwidgets.com/play/IhUw0cXd-iQAFnmuBfAAAA/LCMBTLN/jigsaw-puzzle-1?teacher_id=6610602167369728";
+                  break;
+
+          	case 2: document.location.href="https://www.bookwidgets.com/play/C2wFXSfE-iQAF3fj1PAAAA/BCLQ6BH/jigsaw-puzzle-2?teacher_id=6610602167369728";
+                  break;
+
+          	case 3: document.location.href="https://www.bookwidgets.com/play/LUtOxaVZ-iQAFEOXTPAAAA/6CLWN65/jigsaw-puzzle-3?teacher_id=6610602167369728";
+                  break;
+
+          	case 4: document.location.href="https://www.bookwidgets.com/play/0ZyG5r1n-iQAEDtTVfAAAA/WCL9BWM/jigsaw-puzzle-4?teacher_id=6610602167369728";
+                  break;
+
+        	} 
+		});
+
 
 	</script>
 </body>

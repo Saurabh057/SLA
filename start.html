@@ -17,18 +17,30 @@
         background-image: url(static/images/start.jpg);
 
       }
+      @font-face {
+      font-family: myFirstFont;
+      src: url(static/fonts/BiteHardFX.otf);
+    }
+
       .main-content{
+      /*font-family: newfont;*/
+
       color:red;
-      font-family: Segoe UI;
+          font-family: myFirstFont !important;
+
+      /*font-family: Segoe UI;*/
       text-align: center;
       }
 
       .heading{
-        margin-top: 10%;
+          font-family: myFirstFont !important;
+
+        margin-top: 5%;
         font-size: 100px;
       }
       .btn{
         margin-top: 2%;
+        color : red; 
       }
       .btn1{
         background: #F00000   : 
@@ -36,7 +48,9 @@
 
 
     #section2{
-      font-family: Open Sans;
+      /*font-family: Open Sans;*/
+      font-family: Segoe UI;
+      color: black;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -147,15 +161,22 @@
     /*@keyframes animateArrow{
 
     }*/
-
+    .chosebtn{
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
     </style>
 </head>
 <body>
+  <!-- <div>
+    <img src="static/images/logo.png" height="100px" width="100px" style="display: ">
+  </div> -->
 <section id="section1">
       <div class="main-content ">
-        <h1 class="heading">PSL GAME <br>ZONE</h1>
+        <h1 class="heading">Welcome To <br>The Puzzle Fest</h1>
         <br><h1>BY</h1><br>
-        <h1 style="color: whitesmoke">Navratnas</h1>
+        <h1 style="color: whitesmoke ; font-size: 60px">Navratnas</h1>
       </h1>
         <button class="btn  btn-md btn1">
         <h4>Explore
@@ -198,8 +219,15 @@
     <button class = "spin" onclick = "SpinFunction()"> Spin </button>
   </div>
 
-  
-
+  <div class="chosebtn">
+    <a href="templates/all.html">
+    <button class="btn  btn-md ">
+          <h4>Choose Game
+        <i class="fas fa-angle-double-right"></i>
+          </h4>
+    </button>
+    </a>
+  </div>
 
 </section>
 
@@ -246,7 +274,7 @@ $(document).ready(function(){
       }, 5000);  // 5000 = 5 seconds
 
       $("#box").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-          var game=Math.floor(Math.random() * 6)+1;
+          var game=Math.floor(Math.random() * 5)+1;
     
 
         switch(game)

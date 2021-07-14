@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Games</title>
+	<link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{
+			background: url(../static/images/start.jpg);
+
+		}
+	.container{
+		margin-left: 15%;
+		margin-top: 10px;
+	}
+	a{
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<div class="container ">
+	<div class="row justify-content-md-center">
+		<div class="col col-6">
+			<div class="card bg-dark text-white" style="width: 18rem;">	
+			<a href="https://www.bookwidgets.com/play/EBTFIXnR-iQAFi2xJfAAAA/YCLHCY8/persistent-cros?teacher_id=6423887725199360">
+			  <img src="../static/images/crossword.jpg" class="card-img" alt="...">
+			  <div class="card-img-overlay">
+			    <h5 class="card-title">Crossword</h5>
+			    <p class="card-text"></p>
+			  </div>
+			</a>
+			</div>
+
+		</div>
+		<div class="col col-6">
+			<div class="card bg-dark text-white" style="width: 18rem;">	
+			  <a href="https://www.bookwidgets.com/play/CXIyZXT_-iQAENllbPAAAA/UCL5JUN/psl-word-search">
+			  <img src="../static/images/rules.jpg" class="card-img" alt="...">
+			  <div class="card-img-overlay">
+			    <h5 class="card-title">Word Search</h5>
+			    <p class="card-text"></p>
+			  </div>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<br>
+		<div class="row justify-content-md-center">
+		<div class="col col-6">
+			<div class="card bg-dark text-white" style="width: 18rem;">	
+			  <a href="https://www.bookwidgets.com/play/pnNK_7BZ-iQAEMMVVfAAAA/LCMBNLT/guess-names-of?teacher_id=5964497670897664">
+			  <img src="../static/images/hangman3.png" class="card-img" alt="...">
+			  <div class="card-img-overlay">
+			    <h5 class="card-title">Hangman</h5>
+			    <p class="card-text"></p>
+			  </div>
+			</a>
+			</div>
+
+		</div>
+		<div class="col col-6">
+			<div class="card bg-dark text-white jigsaw" style="width: 18rem;">	
+			  
+			  <img src="../static/images/jigsaw.jpg" class="card-img" alt="...">
+			  <div class="card-img-overlay">
+			    <h5 class="card-title">Jigsaw</h5>
+			    <p class="card-text"></p>
+			  </div>
+			
+			</div>
+
+		</div>
+	</div>
+	<br>
+		<div class="row justify-content-md-center">
+		<div class="col col-6">
+			<div class="card bg-dark text-white" style="width: 18rem;">	
+			  <a href="https://www.bookwidgets.com/play/J4U86aIC-iQAEEBzZfAAAA/YCLF7YF/persistent-qu?teacher_id=4554803186237440">
+			  <img src="../static/images/quiz.jpg" class="card-img" alt="...">
+			  <div class="card-img-overlay">
+			    <h5 class="card-title">Quiz</h5>
+			    <p class="card-text"></p>
+			  </div>
+			</a>
+			</div>
+
+		</div>
+
+		
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	$( ".jigsaw" ).click(function() {
+			var game=Math.floor(Math.random() * 4)+1;
+    
+
+	        switch(game)
+	        {
+	          case 1: document.location.href="https://www.bookwidgets.com/play/IhUw0cXd-iQAFnmuBfAAAA/LCMBTLN/jigsaw-puzzle-1?teacher_id=6610602167369728";
+                  break;
+
+          	case 2: document.location.href="https://www.bookwidgets.com/play/C2wFXSfE-iQAF3fj1PAAAA/BCLQ6BH/jigsaw-puzzle-2?teacher_id=6610602167369728";
+                  break;
+
+          	case 3: document.location.href="https://www.bookwidgets.com/play/LUtOxaVZ-iQAFEOXTPAAAA/6CLWN65/jigsaw-puzzle-3?teacher_id=6610602167369728";
+                  break;
+
+          	case 4: document.location.href="https://www.bookwidgets.com/play/0ZyG5r1n-iQAEDtTVfAAAA/WCL9BWM/jigsaw-puzzle-4?teacher_id=6610602167369728";
+                  break;
+
+        	} 
+		});
+</script>
+</html>
